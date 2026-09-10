@@ -1,0 +1,44 @@
+@import "@fontsource/fredoka/400.css";
+@import "@fontsource/fredoka/500.css";
+@import "@fontsource/fredoka/600.css";
+@import "@fontsource/nunito/400.css";
+@import "@fontsource/nunito/600.css";
+@import "@fontsource/nunito/700.css";
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fredoka", ui-rounded, sans-serif;
+  --font-body: "Nunito", ui-sans-serif, sans-serif;
+
+  --color-pine-50: #f4f7f2;
+  --color-pine-100: #e2ece0;
+  --color-pine-200: #c4d9c2;
+  --color-pine-300: #9abf99;
+  --color-pine-400: #6da06e;
+  --color-pine-500: #4c824f;
+  --color-pine-600: #38683d;
+  --color-pine-700: #2d5333;
+  --color-pine-800: #24422a;
+  --color-pine-900: #1e4d3b;
+
+  --color-lake-100: #ddedf6;
+  --color-lake-300: #93c6e0;
+  --color-lake-500: #4f93c4;
+  --color-lake-700: #2f6a96;
+
+  --color-goal-visited: #4f93c4;
+  --color-goal-highpoint: #2e7d4f;
+  --color-goal-prominence: #1f9e8e;
+  --color-goal-overnight: #5b6bb5;
+  --color-goal-capital: #d9a441;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-pine-50);
+  color: #253528;
+}
+
+h1, h2, h3, .font-display {
+  font-family: var(--font-display);
+}

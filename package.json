@@ -1,0 +1,11 @@
+{
+  "name": "highpoints",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install --prefix client && npm install --prefix server",
+    "build": "npm run build --prefix client",
+    "dev": "npm run dev --prefix client",
+    "start": "npm start --prefix server"
+  }
+}

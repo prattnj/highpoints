@@ -1,0 +1,11 @@
+services:
+  highpoints:
+    build: .
+    container_name: highpoints
+    restart: unless-stopped
+    ports:
+      # Host port comes from the system env var PORT_HIGHPOINTS
+      - "${PORT_HIGHPOINTS:?PORT_HIGHPOINTS is not set}:3000"
+    volumes:
+      # All user data (accounts, logs, JWT secret) lives here on the host
+      - ./data:/app/server/data
